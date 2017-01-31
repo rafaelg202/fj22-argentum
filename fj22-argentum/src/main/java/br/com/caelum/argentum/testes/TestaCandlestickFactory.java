@@ -25,7 +25,7 @@ public class TestaCandlestickFactory {
 		CandlestickFactory fabrica = new CandlestickFactory();
 		Candlestick candle = fabrica.constroiCandleParaData(
 				hoje, negociacoes);
-		
+		//imprime
 		System.out.println(candle.getAbertura());
 		System.out.println(candle.getFechamento());
 		System.out.println(candle.getMinimo());

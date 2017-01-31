@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.List;
 
 public class CandlestickFactory {
-	
+	//constroi um Candle
 	public Candlestick constroiCandleParaData(Calendar data, List<Negociacao> negociacoes){
 		
 		double maximo = negociacoes.get(0).getPreco();
