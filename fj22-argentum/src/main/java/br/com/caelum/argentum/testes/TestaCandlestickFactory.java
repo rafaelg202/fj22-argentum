@@ -31,6 +31,7 @@ public class TestaCandlestickFactory {
 		System.out.println(candle.getMinimo());
 		System.out.println(candle.getMaximo());
 		System.out.println(candle.getVolume());
+		System.out.println(candle.getData());
 	}
 
 }

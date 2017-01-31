@@ -16,7 +16,8 @@ public class CandlestickFactory {
 			
 			if(negociacao.getPreco() > maximo){
 				maximo = negociacao.getPreco();
-			} else if (negociacao.getPreco() < minimo){
+			} 
+			if (negociacao.getPreco() < minimo){
 				minimo = negociacao.getPreco();
 			}
 		}
