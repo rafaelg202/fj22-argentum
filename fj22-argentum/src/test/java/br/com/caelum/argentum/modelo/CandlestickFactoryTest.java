@@ -46,6 +46,10 @@ public class CandlestickFactoryTest {
 		Candlestick candle = fabrica.constroiCandleParaData(hoje, negociacoes);
 		
 		Assert.assertEquals(0.0, candle.getVolume() , 0.00001);
+		Assert.assertEquals(Double.MAX_VALUE, candle.getMinimo() , 0.00001);
+		Assert.assertEquals(0.0, candle.getMaximo() , 0.00001);
+		Assert.assertEquals(0.0, candle.getAbertura() , 0.00001);
+		Assert.assertEquals(0.0, candle.getFechamento() , 0.00001);
 	}
 	@Test
 	public void apenasUmaNegociacaoGeraCandleComValoresIguais(){

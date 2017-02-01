@@ -11,6 +11,9 @@ public final class Candlestick {
 	private final Calendar data;
 
 	public Candlestick(double abertura, double fechamento, double minimo, double maximo, double volume, Calendar data) {
+		if (maximo < minimo){
+			throw new IllegalArgumentException("Preço minimo não pode ser maior que preço máximo");
+		}		
 		this.abertura = abertura;
 		this.fechamento = fechamento;
 		this.minimo = minimo;
