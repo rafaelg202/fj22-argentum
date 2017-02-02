@@ -32,4 +32,12 @@ public final class Negociacao {
 		return preco * quantidade;
 	}
 
+	public boolean isMesmoDia(Calendar outraData) {
+		// TODO Auto-generated method stub
+		return 
+				this.data.get(Calendar.DAY_OF_MONTH) == outraData.get(Calendar.DAY_OF_MONTH)
+					&& this.data.get(Calendar.MONTH) == outraData.get(Calendar.MONTH)
+					&& this.data.get(Calendar.YEAR) == outraData.get(Calendar.YEAR);
+	}
+
 }
